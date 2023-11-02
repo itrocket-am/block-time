@@ -70,7 +70,7 @@ const runPeriodicTasks = async () => {
 	} catch (error) {
 		console.error('Error during block time update', error)
 	} finally {
-		setTimeout(runPeriodicTasks, 1.5 * 60 * 1000)
+		setTimeout(runPeriodicTasks, 10 * 60 * 1000)
 	}
 }
 
