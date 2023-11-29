@@ -74,5 +74,4 @@ const runPeriodicTasks = async () => {
 	}
 }
 
-
 runPeriodicTasks()
