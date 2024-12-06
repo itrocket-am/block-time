@@ -20,7 +20,7 @@ const getAverageBlockTime = async baseUrl => {
 		const difference = timeNow - timeThen
 
 		const averageBlockTime = difference / 40
-		return parseFloat((averageBlockTime / 1000).toFixed(1))
+		return parseFloat((averageBlockTime / 1000).toFixed(3))
 	} catch (error) {
 		console.error('Error computing average block time:', error)
 		return null
