@@ -33,15 +33,8 @@ Configure `nano ~/block-time-mainnet/.env`
 ```
 PB_LOGIN=''
 PB_PASSWORD=''
-```
-
-Configure `nano ~/block-time-mainnet/config.json`
-```
-{
-	"projectsUrl": "https://raw.githubusercontent.com/itrocket-am/itrocket/main/data/projects.json",
-	"pbUrl": "https://pb.itrocket.net",
-	"networkType": "mainnet"
-}
+PB_URL='https://pb.itrocket.net'
+NETWORK_TYPE='mainnet'
 ```
 
 Start pm2 process

@@ -1,7 +1,7 @@
+require('dotenv').config()
 const { authPocketbase, pb } = require('./connect')
 
-const config = require('../../config.json')
-const { networkType } = config
+const networkType = process.env.NETWORK_TYPE
 
 async function addChatId(chatId) {
 	await authPocketbase()

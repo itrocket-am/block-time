@@ -2,9 +2,8 @@ require('dotenv').config()
 const axios = require('axios')
 
 const { authPocketbase, pb } = require('./utils/pocketbase/connect')
-const config = require('./config.json')
 
-const { networkType } = config
+const networkType = process.env.NETWORK_TYPE
 
 const getAverageBlockTime = async baseUrl => {
 	try {

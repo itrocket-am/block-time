@@ -1,8 +1,7 @@
 require('dotenv').config()
 const PocketBase = require('pocketbase/cjs')
 
-const config = require('../../config.json')
-const { pbUrl } = config
+const pbUrl = process.env.PB_URL
 
 const pb = new PocketBase(`${pbUrl}`)
 const pb_login = process.env.PB_LOGIN
